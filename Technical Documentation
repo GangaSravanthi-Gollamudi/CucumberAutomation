@@ -1,2 +1,30 @@
 # Purpose:
-# src/main/java : 
+
+
+# Maven :
+Selenium WebDriver is great for browser automation. But, when using it for testing and building a test framework, it feels underpowered. Integrating Maven with Selenium provides following benefits
+Apache Maven provides support for managing the full lifecycle of a test project.
+
+Maven is used to define project structure, dependencies, build, and test management.
+Using pom.xml(Maven) you can configure dependencies needed for building testing and running code.
+Maven automatically downloads the necessary files from the repository while building the project
+
+# Project Structure : 
+
+# src/main/java: Java source code for common methods across the application goes here
+    
+     # ReusableComponents : This is a package which accomodates the class files reused in the scripted testcases
+    
+        # CheckBox.java :   This class has methods to verify a checkbox and to select a checkbox 
+                     
+                                  oCheckBox.isDisplayed() : Verifies if the checkbox is displayed in webpage and returns a boolean value
+                                  oCheckBox.isEnabled() : Verifies if the checkbox is enabled in webpage and returns a boolean value
+                                  oCheckBox.isSelected() : Verifies if the checkbox is selected in webpage and returns a boolean value
+                                  oCheckBox.click() : Selects the choosen checkbox
+        
+        # DroDown.java : This has methods to choose an option from dropdown by passing the chossen option to "switch case"
+        
+                                  selectByVisibleText() : command can be used to select a list option from the Drop Down field using its                                                             Label Text.
+                                  selectByValue() : command is used to select the list option using the specified value of the List Option                                                      from the multi-selection Box field.
+                                  selectByIndex() : command is used to select the list option using the specified Index of the List Option                                                       from the multi-selection Box field.
+                                 
