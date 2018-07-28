@@ -1,4 +1,4 @@
-# automationPractice
+# CucumberSample Framework
 Open repository created by GangaSravanthi Gollamudi to share framework created for AutomationPractice application
 
 
