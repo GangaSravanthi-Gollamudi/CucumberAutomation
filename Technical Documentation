@@ -22,7 +22,7 @@ Maven automatically downloads the necessary files from the repository while buil
                                   oCheckBox.isSelected() : Verifies if the checkbox is selected in webpage and returns a boolean value
                                   oCheckBox.click() : Selects the choosen checkbox
         
-        # DroDown.java :  This is a class file and has methods to choose an option from dropdown by passing the chossen option to "switch case"
+        # DroDown.java :  This is a class file and has methods to choose an option from dropdown by passing the chossen option to 		"switch case"
         
                                   selectByVisibleText() : command can be used to select a list option from the Drop Down field using its                                                             Label Text.
                                   selectByValue() : command is used to select the list option using the specified value of the List Option                                                      from the multi-selection Box field.
@@ -76,8 +76,39 @@ Maven automatically downloads the necessary files from the repository while buil
                                      
    # src/test/resources : contains folders of properties file ans snapshots
    
-                #
-                  
+                # Object Repository : This folder contains properties files of "PlaceOrder.java" and "UpdateName.java"  contains the <Key,value> pairs of the web element locators
+		# Snapshots : This folder collects and saves the snapshots taken at run time 
+		
+   # Maven Dependencies : Contains the ".jar" filesneede to run the application
+  
+  #Features :
+   
+   		A Feature File is an entry point to the Cucumber tests. This is a file where you will describe your tests in Descriptive 		 language (Like English). It is an essential part of Cucumber, as it serves as an automation test script as well as live 		 documents. A feature file can contain a scenario or can contain many scenarios in a single feature file but it usually 		contains a list of scenarios. Let’s create one such file.   
+  		
+		In order for Cucumber to automatically detect the stories (or features, as they’re known in Cucumber), you need to make 		sure that they carry the ‘.feature‘ file extension   
+		
+			# Feature: Defines what feature you will be testing in the tests below
+			# Given: Tells the pre-condition of the test
+			# And: Defines additional conditions of the test
+			# Then: States the post condition. You can say that it is expected result of the test.
+			
+		Gherkin
+			A language above is called Gherkin and it implements the principles of Business readable domain specific 				language(BRDSL). Domain specific language gives you the ability to describe your application behavior without 				getting into details of implementation.
+			
+			The features folder in the "cucumbersample" project contains the feature files for PlaceOrder.java and    				UpdateName.java classes . The following plugin is added to make the feature files more user friendly
+                
+		 			"http://cucumber.github.com/cucumber-eclipse/update-site"
+					
+  #target : This build directory contains the html reports generated during the run time
+  
+  #pom.xml : A Project Object Model or POM is the fundamental unit of work in Maven. It is an XML file that contains information about 		the project and configuration details used by Maven to build the project. It contains default values for most projects. Examples 	for this is the build directory, which is target; the source directory, which is src/main/java; the test source directory, which 	is src/test/java; and so on.
+		
+          Some of the configuration that can be specified in the POM are the project dependencies, the plugins or goals that can be 		executed, the build profiles, and so on. Other information such as the project version, description, developers, mailing lists 		and such can also be specified.
+	  
+	  The dependencies used  
+					
+		  
+		  
                   
               
         
