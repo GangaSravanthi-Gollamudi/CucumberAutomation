@@ -22,9 +22,62 @@ Maven automatically downloads the necessary files from the repository while buil
                                   oCheckBox.isSelected() : Verifies if the checkbox is selected in webpage and returns a boolean value
                                   oCheckBox.click() : Selects the choosen checkbox
         
-        # DroDown.java : This has methods to choose an option from dropdown by passing the chossen option to "switch case"
+        # DroDown.java :  This is a class file and has methods to choose an option from dropdown by passing the chossen option to "switch case"
         
                                   selectByVisibleText() : command can be used to select a list option from the Drop Down field using its                                                             Label Text.
                                   selectByValue() : command is used to select the list option using the specified value of the List Option                                                      from the multi-selection Box field.
                                   selectByIndex() : command is used to select the list option using the specified Index of the List Option                                                       from the multi-selection Box field.
                                  
+        # LaunchApplication.java : This is a class file and has the methods to login and take snapshots
+        
+                                   LaunchApplication() : This is a constuctor to launch the browser and maximize the window
+                                   login() : This is a public method to open the website and "Sign In"
+                                   successLogin() : Verifies if the login is successful
+                                   takeSnapShot() : Takes the snapshots of the webpage
+                                   
+        # PropertiesFile.java : This is a File and it holds the methods to read a property file from the destination and get the data from the file
+        
+                                    PropertiesFile() : This is constructor and has method to load the properties file from the variable of filepath in class file 
+                                    getData() : gets the value from the properties file for the given key
+                                    getLocator() : gets the location of webelement for the specified locator
+                                    
+  # src/main/resources : contains the properties files and snapshot documents of the class files in src/main/java
+   
+          # login.properties : contains the <key,value> pairs of variables and webelements
+          
+  # src/test/java : This has the scripts for test scenarios and test runner
+   
+         # cucumbersample : This is a package containing class files of test scenarios
+         
+              #PlaceOrder.java : This is a class file and has methods to place an order for T-SHIRT in http://automationpractice.com website.
+              
+                            # Steps covered : 
+                                  Login into the application 
+                                  Place an order for T-SHIRT
+                                  Proceed to checkout
+                                  Verify for the order placed in order history
+                                  
+               #UpdateName.java : This Class file logs into personal information and updates the first name of the user
+               
+                            # Steps Covered :
+                                Login into the application 
+                                Open personal information page
+                                Change the first name
+                                save the data
+                                
+          #runner : This package contains class file to run the cucumber scripts
+          
+                #TestRuner.java : This method runs the scripts with "@RunWith(Cucumber.class)" and reads the cucumber option with 
+                                    @CucumberOptions
+                                    (features="features",    // path to feature file
+				                     glue={"cucumbersample"},  // package name of test scripts
+				                     plugin = {"html:target/cucumber-html-report" })  //plugin to generate html reports
+                                     
+                                     
+   # src/test/resources : contains folders of properties file ans snapshots
+   
+                #
+                  
+                  
+              
+        
