@@ -45,6 +45,6 @@ http://cucumber.github.com/cucumber-eclipse/update-site
 7. Update PropertiesFile Path in LaunchApplication.java, PlaceOrder.java and UpdateName.Java files
 8. Update path of snapshots in login.properties file
 9. Navigate to src/test/java > runner > TestRunner.java
-10. Rightclick on TestRunner.java > Run As > JUnit Test
+10. Right click TestRunner.java > Run As > JUnit Test
 
 
