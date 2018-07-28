@@ -105,7 +105,35 @@ Maven automatically downloads the necessary files from the repository while buil
 		
           Some of the configuration that can be specified in the POM are the project dependencies, the plugins or goals that can be 		executed, the build profiles, and so on. Other information such as the project version, description, developers, mailing lists 		and such can also be specified.
 	  
-	  The dependencies used  
+		<dependencies>
+	<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>2.53.0</version>
+		</dependency>
+			
+	
+	 <dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+  <dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>1.2.2</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+  </dependencies>
+	   
+	       
 					
 		  
 		  
